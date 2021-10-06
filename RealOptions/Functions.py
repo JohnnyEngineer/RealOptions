@@ -10,11 +10,11 @@ from scipy.stats import norm # 1.5.2
 from tkinter import * #8.6
 from tkinter import messagebox
 import sys
-import os
+#import os
 
-if os.environ.get('DISPLAY','') == '':
-    print('no display found. Using :0.0')
-    os.environ.__setitem__('DISPLAY', ':0.0')
+#if os.environ.get('DISPLAY','') == '':
+#    print('no display found. Using :0.0')
+#    os.environ.__setitem__('DISPLAY', ':0.0')
 try:
     import Tkinter as tk
 except ImportError:
