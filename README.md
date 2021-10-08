@@ -9,7 +9,7 @@ sudo docker build -t realoptions . -f Dockerfile
 </code><br>
 3-) After the previous step is completed, type the following command in your terminal:<br>
 <code>
-sudo docker run --rm     --network=host --privileged     -v /dev:/dev     -e DISPLAY=$DISPLAY     -v /tmp/.X11-unix:/tmp/.X11-unix     -v $HOME/.Xauthority:/root/.Xauthority     -it realoptionsapp
+sudo xhost local:root && sudo docker run --rm     --network=host --privileged     -v /dev:/dev     -e DISPLAY=$DISPLAY     -v /tmp/.X11-unix:/tmp/.X11-unix     -v $HOME/.Xauthority:/root/.Xauthority     -it realoptions
 </code><br>
 4-) You should be able to see the software running<br>
 
